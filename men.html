@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="image/silver-watch.png" type="image/x-icon">
+    <title>owufuju watches</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" 
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" defer
+     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" defer integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="script.js" type="text/JavaScript" defer></script>
+    <script src="gender.js" type="text/JavaScript" defer></script>
+</head>
+<body>
+    
+    <!-- HEADING............................................ -->
+    <header>
+        <div class="header-container">
+            <nav class="nav-bar">
+                <!-- logo bar -->
+                <a href="index.html" class="logo-section">
+                    <video autoplay muted playsinline poster><source src="image/vid.mp4" type="video/mp4"></video>
+                </a>
+                <a href="index.html" class="logo"><img src="image/logo.png"></a>
+                <!-- search bar -->
+                <ul class="nav-list list-unstyled d-flex gap-3">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="men.html">Male</a></li>
+                    <li><a href="men.html">Female</a></li>
+                    <li><a href="men.html">Unisex</a></li>
+                    <li><a href="watchlist.html">Must Have</a></li>
+                </ul>
+                <!-- menu bar -->
+                <ul class="menu-bar list-unstyled">
+                    <div class="search-bar-2">
+                       
+                        <div class="search-bar-3">
+                            <div class="search-input">
+                                <img src="image/search.svg">
+                                <input type="text" name="search" id="search" placeholder="Search for any products">
+                            </div>
+                            <button type="button" style="background-color: var(--owufuju-color-blue);" class="search-btn">Search</button>
+                        </div>
+                    </div>
+                    <li><img src="image/whatsapp.svg"><h6 class="what"> WhatsApp</h6></li>
+                    <span id="search-toggle"> 
+                        <img class="c-s" src="image/green search.svg">
+                        </span>
+                    <li  onclick="window.location.href = 'cart.html';"><img src="image/cart.svg"> <h6 class="cart">Cart</h6> <span id="cart-count">2</span></li>
+                    <li class="heart-bar"><img src="image/heart.svg"></li>
+                    <li class="menu-fill"><img src="image/mingcute_menu-fill.svg"></li>
+                    <!-- <li class="menu-fill"><img src="image/mingcute_menu-fill.svg"></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- main -->
+    <main>
+        <div class="gender-container">
+            <div class="page-location">
+                <a href="index.html"><img src="image/home.svg" ></a>
+                <span><a href="index.html">Home</a> > <a href="men.html">Men</a></span>
+                <div class="plus-add">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div class="gender-page-wrapper">
+
+                <div class="gender-page-category">
+                    <div class="category">
+                        <h3>Shop by Price</h3>
+                        <div class="content">
+                            <label for="c-1" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-1" id="c-1">High to Low</label>
+                            <label for="c-2" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-2" id="c-2">Low to High</label>
+                            <label for="c-3" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-3" id="c-3">None</label>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <h3>Shop by Size</h3>
+                        <div class="content">
+                            <label for="c-4" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-4" id="c-4">XXS</label>
+                            <label for="c-5" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-5" id="c-5">XS</label>
+                            <label for="c-6" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-6" id="c-6">XS</label>
+                            <label for="c-7" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-7" id="c-7">XS</label>
+                            <label for="c-8" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-8" id="c-8">XS</label>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <h3>Shop by Color</h3>
+                        <div class="content">
+                            <label for="c-9" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-9" id="c-9">Black</label>
+                            <label for="c-10" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-10" id="c-10">Grey</label>
+                            <label for="c-11" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-11" id="c-11">White</label>
+                            <label for="c-12" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-12" id="c-12">Gold</label>
+                            <label for="c-13" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-13" id="c-13">Silver</label>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <h3>Categories</h3>
+                        <div class="content">
+                            <label for="c-14" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-14" id="c-14">Men</label>
+                            <label for="c-15" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-15" id="c-15">Women</label>
+                            <label for="c-16" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-16" id="c-16">Uninex</label>
+                            <label for="c-17" class="d-flex gap-2 align-item-center"><input type="checkbox" name="c-17" id="c-17">Must Have</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="watch-file-wrapper">
+                    <div class="watch-file-content">
+                        <div class="img-layout-1">
+                            <img src="image/Stylish golden watch on a white surface2.png">
+                            <span style="background-color: var(--owufuju-sleek-green);">New In</span>
+                            <div class="hover-effect">
+                                <h3>Gray Band Men Wrist Watch, Quartz</h3>
+                                <p><b style="text-decoration: line-through;">N</b> 45,000</p>
+                            </div>
+                        </div>
+                        <div class="brand-container">
+                            <p class="p">Gray Band Men Wrist Watch, Quartz</p>
+                            <span><b style="text-decoration: line-through;">N</b> 45,000</span>
+                            <button type="button" onclick="window.location.href='product-description.html';">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="watch-file-content">
+                        <div class="img-layout-1">
+                            <img src="image/Rectangle 6.png">
+                            <div class="hover-effect">
+                                <h3>Gray Band Men Wrist Watch, Quartz</h3>
+                                <p><b style="text-decoration: line-through;">N</b> 45,000</p>
+                            </div>
+                        </div>
+                        <div class="brand-container">
+                            <p class="p">Gray Band Men Wrist Watch, Quartz</p>
+                            <span><b style="text-decoration: line-through;">N</b> 45,000</span>
+                            <button type="button" onclick="window.location.href='product-description.html';">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="watch-file-content">
+                        <div class="img-layout-1">
+                            <img src="image/cryst.png">
+                            <div class="hover-effect">
+                                <h3>Gray Band Men Wrist Watch, Quartz</h3>
+                                <p><b style="text-decoration: line-through;">N</b> 45,000</p>
+                            </div>
+                        </div>
+                        <div class="brand-container">
+                            <p class="p">Gray Band Men Wrist Watch, Quartz</p>
+                            <span><b style="text-decoration: line-through;">N</b> 45,000</span>
+                            <button type="button" onclick="window.location.href='product-description.html';">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="watch-file-content">
+                        <div class="img-layout-1">
+                            <img src="image/cryst.png">
+                            <span style="background-color: var(--owufuju-sleek-green);">New In</span>
+                            <div class="hover-effect">
+                                <h3>Gray Band Men Wrist Watch, Quartz</h3>
+                                <p><b style="text-decoration: line-through;">N</b> 45,000</p>
+                            </div>
+                        </div>
+                        <div class="brand-container">
+                            <p class="p">Gray Band Men Wrist Watch, Quartz</p>
+                            <span><b style="text-decoration: line-through;">N</b> 45,000</span>
+                            <button type="button" onclick="window.location.href='product-description.html';">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="watch-file-content">
+                        <div class="img-layout-1">
+                            <img src="image/cryst.png">
+                            <span style="background-color: var(--owufuju-china-red);">Sold Out</span>
+                            <div class="hover-effect">
+                                <h3>Gray Band Men Wrist Watch, Quartz</h3>
+                                <p><b style="text-decoration: line-through;">N</b> 45,000</p>
+                            </div>
+                        </div>
+                        <div class="brand-container">
+                            <p class="p">Gray Band Men Wrist Watch, Quartz</p>
+                            <span><b style="text-decoration: line-through;">N</b> 45,000</span>
+                            <button type="button" onclick="window.location.href='product-description.html';">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="watch-file-content">
+                        <div class="img-layout-1">
+                            <img src="image/Stylish golden watch on a white surface2.png">
+                            <div class="hover-effect">
+                                <h3>Gray Band Men Wrist Watch, Quartz</h3>
+                                <p><b style="text-decoration: line-through;">N</b> 45,000</p>
+                            </div>
+                        </div>
+                        <div class="brand-container">
+                            <p class="p">Gray Band Men Wrist Watch, Quartz</p>
+                            <span><b style="text-decoration: line-through;">N</b> 45,000</span>
+                            <button type="button" onclick="window.location.href='product-description.html';">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="watch-file-content">
+                        <div class="img-layout-1">
+                            <img src="image/Rectangle 6.png">
+                            <span style="background-color: var(--owufuju-china-red);">Sold Out</span>
+                            <div class="hover-effect">
+                                <h3>Gray Band Men Wrist Watch, Quartz</h3>
+                                <p><b style="text-decoration: line-through;">N</b> 45,000</p>
+                            </div>
+                        </div>
+                        <div class="brand-container">
+                            <p class="p">Gray Band Men Wrist Watch, Quartz</p>
+                            <span><b style="text-decoration: line-through;">N</b> 45,000</span>
+                            <button type="button" onclick="window.location.href='product-description.html';">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="watch-file-content">
+                        <div class="img-layout-1">
+                            <img src="image/cryst.png">
+                            <div class="hover-effect">
+                                <h3>Gray Band Men Wrist Watch, Quartz</h3>
+                                <p><b style="text-decoration: line-through;">N</b> 45,000</p>
+                            </div>
+                        </div>
+                        <div class="brand-container">
+                            <p class="p">Gray Band Men Wrist Watch, Quartz</p>
+                            <span><b style="text-decoration: line-through;">N</b> 45,000</span>
+                            <button type="button" onclick="window.location.href='product-description.html';">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-scroll w-full d-flex justify-content-center p-3">
+                <span class="d-flex gap-3">
+                     <p>1</p>
+                     <p>2</p>
+                     <p>3</p>
+                     <p>4</p>
+                     <p>></p>
+                </span>
+            </div>
+        </div>
+    </main>
+
+  <!-- trending -->
+  <div class="trending-sell-container">
+    <div class="hot-trend">
+        <div class="txt">
+            <span>Hot Trend</span>
+            <div class="polygon">
+                <img src="image/Polygon 2.svg">
+                <span class="line2"></span>
+            </div>
+        </div>
+        <div class="hot-trend-wrap">
+            <a href="/" class="hot-trend-content">
+               <div class="piffy" > <img class="piff" src="image/Rectangle 45.png" >
+            <div class="effect">
+                <span>Unisex Quartz Wrist Watch</span>
+            </div>
+            </div>
+            <div class="details">
+                <p>Unisex Quartz Wrist Watch</p>
+                <div class="brand-stars d-flex align-item-center gap-2">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                </div>
+                <span><b style="text-decoration: line-through;">N</b> 55,000</span>
+            </div>
+        </a>
+            <div class="hot-trend-content">
+               <div class="piffy" > <img class="piff" src="image/Rectangle 51.png" > 
+                 <div class="effect">
+                <span>Unisex Quartz Wrist Watch</span>
+            </div></div>
+            <div class="details">
+                <p>Unisex Quartz Wrist Watch</p>
+                <div class="brand-stars d-flex align-item-center gap-2">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                </div>
+                <span><b style="text-decoration: line-through;">N</b> 55,000</span>
+            </div>
+            </div>
+            <div class="hot-trend-content">
+               <div class="piffy" > <img class="piff" src="image/f8ee03e50110390771aaae01f1a57930_640x1000_fill 2.png" >
+                <div class="effect">
+                    <span>Unisex Quartz Wrist Watch</span>
+                </div>
+            </div>
+            <div class="details">
+                <p>Unisex Quartz Wrist Watch</p>
+                <div class="brand-stars d-flex align-item-center gap-2">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                </div>
+                <span><b style="text-decoration: line-through;">N</b> 55,000</span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="hot-trend">
+        <div class="txt">
+            <span>Best Seller</span>
+            <div class="polygon">
+                <img src="image/Polygon 2.svg">
+                <span class="line2"></span>
+            </div>
+        </div>
+        <div class="hot-trend-wrap">
+            <div class="hot-trend-content">
+               <div class="piffy" > <img class="piff" src="image/Rectangle 51.png" >
+                <div class="effect">
+                    <span>Unisex Quartz Wrist Watch</span>
+                </div>
+            </div>
+            <div class="details">
+                <p>Unisex Quartz Wrist Watch</p>
+                <div class="brand-stars d-flex align-item-center gap-2">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                </div>
+                <span><b style="text-decoration: line-through;">N</b> 55,000</span>
+            </div>
+            </div>
+            <div class="hot-trend-content">
+               <div class="piffy" > <img class="piff" src="image/f8ee03e50110390771aaae01f1a57930_640x1000_fill 2.png" >
+                <div class="effect">
+                    <span>Unisex Quartz Wrist Watch</span>
+                </div>
+            </div>
+            <div class="details">
+                <p>Unisex Quartz Wrist Watch</p>
+                <div class="brand-stars d-flex align-item-center gap-2">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                </div>
+                <span><b style="text-decoration: line-through;">N</b> 55,000</span>
+            </div>
+            </div>
+            <div class="hot-trend-content">
+               <div class="piffy" > <img class="piff" src="image/Rectangle 45.png" >
+                <div class="effect">
+                    <span>Unisex Quartz Wrist Watch</span>
+                </div>
+            </div>
+            <div class="details">
+                <p>Unisex Quartz Wrist Watch</p>
+                <div class="brand-stars d-flex align-item-center gap-2">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                </div>
+                <span><b style="text-decoration: line-through;">N</b> 55,000</span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="hot-trend">
+        <div class="txt">
+            <span>Feature</span>
+            <div class="polygon">
+                <img src="image/Polygon 2.svg">
+                <span class="line2"></span>
+            </div>
+        </div>
+        <div class="hot-trend-wrap">
+            <div class="hot-trend-content">
+               <div class="piffy" > <img class="piff" src="image/Rectangle 51.png" >
+                <div class="effect">
+                    <span>Unisex Quartz Wrist Watch</span>
+                </div>
+            </div>
+            <div class="details">
+                <p>Unisex Quartz Wrist Watch</p>
+                <div class="brand-stars d-flex align-item-center gap-2">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                </div>
+                <span><b style="text-decoration: line-through;">N</b> 55,000</span>
+            </div>
+            </div>
+            <div class="hot-trend-content">
+               <div class="piffy" > <img class="piff" src="image/f8ee03e50110390771aaae01f1a57930_640x1000_fill 2.png" >
+                <div class="effect">
+                    <span>Unisex Quartz Wrist Watch</span>
+                </div>
+            </div>
+            <div class="details">
+                <p>Unisex Quartz Wrist Watch</p>
+                <div class="brand-stars d-flex align-item-center gap-2">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                </div>
+                <span><b style="text-decoration: line-through;">N</b> 55,000</span>
+            </div>
+            </div>
+            <div class="hot-trend-content">
+               <div class="piffy" > <img class="piff" src="image/Rectangle 45.png" >
+                <div class="effect">
+                    <span>Unisex Quartz Wrist Watch</span>
+                </div>
+            </div>
+            <div class="details">
+                <p>Unisex Quartz Wrist Watch</p>
+                <div class="brand-stars d-flex align-item-center gap-2">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                    <img src="image/stare.svg">
+                </div>
+                <span><b style="text-decoration: line-through;">N</b> 55,000</span>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- supportive section================================= -->
+    <div class="supportive-section">
+        <div class="wrapper">
+            <div class="ery"><div class="blogs">
+                <img src="image/bus.png" >
+                <span>Fast & Efficient Delivery</span>
+                <p>Fast nationwide delivery</p>
+            </div></div>
+        <div class="ery"><img class="mdi" src="image/mdi_arrow.svg"> <div class="blogs">
+            <img src="image/card-pay.png">
+            <span>Secure Payment</span>
+            <p>Secured payment for all orders</p>
+        </div></div>
+        <div class="ery"><img class="mdi" src="image/mdi_arrow.svg"> <div class="blogs">
+            <img src="image/card-pay.png">
+            <span>Money back Guaranty</span>
+            <p>Secured payment for all orders</p>
+        </div></div>
+        <div class="ery"><img class="mdi" src="image/mdi_arrow.svg"> <div class="blogs">
+            <img src="image/card-pay.png">
+            <span>Online Support</span>
+            <p>Secured payment for all orders</p>
+        </div></div>
+        </div>
+     </div>
+
+
+           <!-- joining mails -->
+           <div class="join-mail-wrapper">
+            <div class="join-mail-text">
+                <span>Join our mailing list to get exclusive updates</span>
+                <form action="/" method="get">
+                    <input type="text" name="email" id="email" placeholder="Enter your email here...">
+                    <button type="submit">Suscribe</button>
+                </form>
+            </div>
+          </div>
+    
+          <!-- footer -->
+          <footer>
+            
+                <div class="first-footer">
+                    <div class="footer-wrapper">
+                        <div class="footer-logo-space">
+                            <img src="image/logo.png">
+                            <p>We are a Lagos based Wrist-Watch business company, carefully choosing designs and quality materials for our customers with the objective of completing their fashion statement in a simple, yet elegant way - without going out of pocket.</p>
+                        </div>
+                        <div class="quick-link">
+                            <span>Quick Links</span>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html">Male</a></li>
+                                <li><a href="index.html">Female</a></li>
+                                <li><a href="index.html">About</a></li>
+                                <li><a href="index.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="contact-us">
+                            <span>Contact Us</span>
+                            <div class="contact-link">
+                                <a href="tel:+234 805 5851 210"><img src="image/Phone.svg"><p>+234 805 5851 210</p></a>
+                            <a href="mailto:Contact@onwujuju.com"><img src="image/Email.svg"><p>Contact@onwujuju.com</p></a>
+                            <a href="address: Onwufuju Street,
+                            Lagos, Nigeria"><img src="image/Pin.svg"><p>Onwufuju Street,
+                                Lagos, Nigeria</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- last footer -->
+                <div class="center-foot">
+                <div class="footer">
+                    <h3>© 2023 Onwujuju watches. All rights reserved</h3>
+                    <span>
+                        <a href="/"><img src="image/teenyicons_instagram-solid.svg" alt=""></a>
+                        <a href="/"><img src="image/Behance.svg" alt=""></a>
+                        <a href="/"><img src="image/simple-icons_x.svg" alt=""></a>
+                        <a href="/"><img src="image/Twitter.svg" alt=""></a>
+                    </span>
+                </div>
+                </div>
+          </footer>
+</body>
+</html>
